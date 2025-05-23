@@ -10,6 +10,9 @@ const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
+app.get("/",(req, res) => {
+  res.send("Teste do capão SERVIDOR")
+})
 // Rota para processar as mensagens do chatbot
 app.post('/api/chatbot', async (req, res) => {
   const { message } = req.body;
