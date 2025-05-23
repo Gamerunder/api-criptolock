@@ -59,7 +59,7 @@ const ChatBot: React.FC = () => {
     
     try {
       // Usando nosso servidor intermediário em vez da API diretamente
-      const response = await fetch('http://https://crypto-consult-chatbot.vercel.app/api/chatbot', {
+      const response = await fetch('http://api-criptolock.vercel.app/api/chatbot', {
         method: 'POST',
         headers: {
           "Content-Type": "application/json"
