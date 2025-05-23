@@ -16,7 +16,7 @@ app.get("/",(req, res) => {
 // Rota para processar as mensagens do chatbot
 app.post('/api/chatbot', async (req, res) => {
   const { message } = req.body;
-
+res.send("ROTA OKKKKK")
   try {
     const response = await fetch('https://api.vectorshift.ai/v1/pipeline/6812918d1abc4a478b83d78a/run', {
       method: 'POST',
